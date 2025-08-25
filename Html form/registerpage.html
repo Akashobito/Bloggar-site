@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Register Page
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/register.css">
+  </head>
+
+  <body>
+    <div class="main">
+      <h4 class="register-form">
+        REGISTER PAGE
+      </h4>
+
+      <form class="form-div">
+          <label for="name">Name</label>
+          <input class="input" type="text" placeholder="Enter Name" id="name">
+
+          <label for="fathername">Father Name</label>
+          <input class="input" type="text" placeholder="Enter Father Name" id="fathername">
+
+          <label for="educate">Education</label>
+          <input class="input" type="text" placeholder="Enter Education" id="educate">
+
+          <label for="dob">Date Of Birth</label>
+          <input class="input" type="date" id="dob" style="padding-right: 200px;">
+        
+          <label for="email">Email Address</label>
+          <input class="input" type="email" placeholder="Enter Email" id="email">
+
+          <label for="mob">Mobile Number</label>
+          <input class="input" type="text" placeholder="Enter Mobile Number">
+
+        
+          <label>Address</label>
+          <input class="input" type="text" style="height:40px;" placeholder="Enter Address">
+
+          <label for="city" >City</label>
+          <Input class="input" type="text" placeholder="Enter City" id="city">
+
+          <label for="country">Country</label>
+          <input class="input" type="text" placeholder="Enter Country">
+
+          <label>Gender</label>
+          <div>
+            <span>Male</span><input type="radio" name="gender">
+            <span>Female</span><input type="radio" name="gender">
+          </div>
+
+          <label for="color">Favourite Color</label>
+          <input type="color" id="color">
+
+          <label for="profile">Profile Picture</label>
+          <input type="file" >
+
+          <!-- dummy div for alignment -->
+          <div>
+            <a href="loginpage.html">
+              <button class="back-button" type="button">
+                Back
+              </button>
+            </a>
+          </div>
+
+          <div class="submit-reset-div">
+            <input onclick="alert('Registered Successfully');" class="submit" type="submit">
+            <input class="reset" type="reset">
+          </div> 
+        </form>
+    </div>
+  </body>
+</html>
