@@ -77,6 +77,12 @@ body,p {
   gap: 40px;
   align-items: center;
   justify-content: center;
+  background-image: url(../img/box-2-img.png),url('https://blogger.googleusercontent.com/img/b/U2hvZWJveA/AVvXsEiKQBhcVtj--7thQ1JzOgtxMAjmy2cg09uEwEj62zYpgTwvLBCJSAvhmxuvL1DZrtOQ9409UIX0dyxPEY3ofOYElLwjGkEiLoVJk7tZfb-in_OymeFMdLREF0TETdMIKQBd6_9DuUGUnP-Nn28MNUwum8PJ_AdDwJy7Ook/w1200');
+  background-repeat: no-repeat,no-repeat;
+  background-position: 150% top, 130% top;
+  background-size: 800px , 800px;
+  background-position-y: 200px ,100px;
+
 }
 
 .box-2-content {
