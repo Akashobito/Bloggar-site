@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Horizontal Nav bar</title>
+</head>
+<style>
+  *{
+    font-family: verdana;
+    font-size: 14px;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    background-color: #282A35;
+  }
+
+  li {
+    display: inline-block;
+    color: white;
+    background-color: #282A35;
+    margin-left: -5px;
+    padding: 8px 20px;
+    cursor: pointer;
+  }
+
+  .li:hover {
+    background-color: black;
+  }
+
+  .after {
+    background-color: #04AA6D;
+  }
+</style>
+  <ul>
+    <li class="li" title="Html">HTML</li>
+    <li class="li" title="Css">CSS</li>
+    <li class="li" title="JavaScript">JAVASCRIPT</li>
+    <li class="li" title="Sql">SQL</li>
+    <li class="li" title="Python">PYTHON</li>
+    <li class="li" title="Php">PHP</li>
+    <li class="li" title="C">C</li>
+    <li class="li" title="C++">C++</li>
+    <li class="li" title="C#">C#</li>
+    <li class="li" title="React">REACT</li>
+    <li class="li" title="MySql">MY SQL</li>
+    <li class="li" title="Bootsrap">BOOTSRAP</li>
+    <li class="li" title="Node">NODE</li>
+    <li class="li" title="Express">EXPRESS</li>
+    <li class="li" title="Java">JAVA</li>
+    <li class="li" title="Excel">EXCEL</li>
+  </ul>
+
+  <script>
+
+    const array = document.querySelectorAll('.li');
+    array.forEach(function(value){
+      //console.log(value);
+      value.addEventListener('click', function(){
+        //removing all previous styles(after)
+        array.forEach(function(previous){
+          previous.classList.remove('after');
+          previous.classList.add('li');
+        })
+        value.classList.add('after');
+        value.classList.remove('li');
+      })
+    })
+
+   
+  </script>
+</body>
+</html>
