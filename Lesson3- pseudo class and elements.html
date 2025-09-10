@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>    </title>
+
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+      }
+
+      /* pseudo class */
+      div:hover {
+        cursor: pointer;
+        background-color: rgb(141, 213, 255);
+      }
+
+      div:active {
+        background-color: rgb(226, 226, 121);
+      }
+
+      a {
+        font-size: 40px;
+      }
+      a:hover {
+        color: red;
+      }
+      a:active {
+        color: pink;
+      }
+      a:link{
+        color: wh;
+      }
+
+      /* pseudo element */
+      p::after {
+        content: "-after";
+      }
+
+      p::before {
+        content: "-before"
+      }
+      p::selection {
+        background-color: yellow;
+      }
+
+
+      ul {
+        /* list-style: */
+      }
+
+      li::marker {
+        color: rgb(153, 79, 79);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+    </div>
+
+    <a href="">link</a>
+
+    <p>
+      how are you
+    </p>
+
+    <ul>
+      <li>hello</li>
+    </ul>
+  </body>
+  </html>
